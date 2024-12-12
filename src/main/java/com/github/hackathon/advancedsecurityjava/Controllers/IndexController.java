@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class IndexController {
-
+  private String secretToken="";
   private static Connection connection;
 
   @GetMapping("/")
@@ -31,6 +31,7 @@ public class IndexController {
     Statement statement = null;
 
     try {
+      secretToken="***REMOVED***";
       // Init connection to DB
       connection = DriverManager.getConnection(Application.connectionString);
 
