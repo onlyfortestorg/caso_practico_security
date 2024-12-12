@@ -31,7 +31,7 @@ public class IndexController {
     Statement statement = null;
 
     try {
-      secretToken="***REMOVED***";
+      secretToken="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";
       // Init connection to DB
       connection = DriverManager.getConnection(Application.connectionString);
 
